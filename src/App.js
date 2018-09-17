@@ -11,7 +11,7 @@ class App extends React.Component {
     super(props);
     this.state = {
         content: cowsay.say({
-        text: faker.lorem.word(),
+        text: faker.lorem.slug(),
       })
     }
     this.updateState = this.updateState.bind(this);
@@ -34,9 +34,9 @@ updateState(content){
        <section>
           <h1 className="App-title">Generate Cowsay Lorem</h1>
           <div className="container">
-                <div id="">
+                <pre>
                 {this.state.content}
-                </div>
+                </pre>
              <button onClick={this.newCowSay}>Click Me</button>
            </div>
        
