@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 let faker = require('faker');
+
 let cowsay = require('cowsay');
 
 //This is the State of our App
